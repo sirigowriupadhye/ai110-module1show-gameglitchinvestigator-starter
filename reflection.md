@@ -16,9 +16,9 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-|Guess of 2 with secret 96 |user should guess higher |Game displayed "GO LOWER!" |None |
-|Guess of 19 when secret was 19 | ame should recognize the correct guess and show a success| Game displayed “Game over. Start a new game to try again.”| None|
-|Wrong guess with "Show hint" checked | A high/low hint should appear| No hint appeared| None|
+|Guess of 2 with secret 96 |user should guess higher |Game displayed "GO LOWER!" |No console error; incorrect "GO LOWER!" displayed in the app.|
+|Guess of 19 when secret was 19 | ame should recognize the correct guess and show a success| Game displayed “Game over. Start a new game to try again.”| No console error; "Game over..." displayed in the app.|
+|Wrong guess with "Show hint" checked | A high/low hint should appear| No hint appeared| No console error; no hint displayed in the app.|
 
 ---
 
