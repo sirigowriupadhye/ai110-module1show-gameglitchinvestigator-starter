@@ -28,7 +28,7 @@ Document at least 3 bugs you found. Add rows as needed.
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion you did not accept as written (including what the AI suggested, why you rejected or changed it, and how you verified your version). It does not have to be a suggestion that was wrong: over-engineered, out of scope, harder to read, or a poor fit for this codebase all count.
 
-I used ChatGPT to help me understand the code and find bugs in the game. One suggestion that was correct was fixing the secret number so the higher/lower hint would work correctly. I tested the game myself to make sure the fix worked. I also changed some suggestions when I felt they were more complicated than needed. 
+I used ChatGPT to help me understand the code and find bugs in the game. One suggestion that was correct was fixing the secret number so the higher/lower hint would work correctly. I tested the game myself to make sure the fix worked. One suggestion I did not use exactly was adding more complicated changes to the game. I kept my code simple and easier to understand. I tested my changes with different guesses to make sure the game worked correctly.
 
 ---
 

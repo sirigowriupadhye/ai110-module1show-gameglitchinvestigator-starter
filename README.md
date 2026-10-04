@@ -26,18 +26,22 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+The game is a number guessing game where the player tries to guess a secret number. The game gives hints to tell the player whether their guess is too high or too low.
 - [ ] Detail which bugs you found.
+I found two main bugs. The higher and lower hints were backwards, the game did not properly reset when starting a new game.
 - [ ] Explain what fixes you applied.
+I fixed the game logic so the higher and lower hints correctly match the player's guess. I also fixed the game state so the secret number stays the same while playing and resets when starting a new game. The guessing logic was moved into `logic_utils.py`, and I added automated tests for winning, too high, and too low guesses.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. The player starts a new game and the game chooses a secret number.
+2. The player enters a guess that is lower than the secret number.
+3. The game correctly shows "Go HIGHER!".
+4. The player enters a guess that is higher than the secret number, and the game correctly shows "Go LOWER!".
+5. The player enters the correct secret number and the game shows the winning result.
+6. The player can start a new game, which resets the game state and chooses a new secret number.
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
@@ -46,7 +50,11 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 ```
 # Paste your pytest output here, e.g.:
 # pytest tests/
-# ========================= X passed in 0.XXs =========================
+# collected 3 items                                                              
+
+tests\test_game_logic.py ...                                             [100%]
+
+============================== 3 passed in 0.10s ==============================
 ```
 
 ## 🚀 Stretch Features
