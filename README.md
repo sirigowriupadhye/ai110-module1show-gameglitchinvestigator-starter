@@ -60,3 +60,5 @@ tests\test_game_logic.py ...                                             [100%]
 ## 🚀 Stretch Features
 
 - [ ] [If you choose to complete Challenge 4, describe the Enhanced UI changes here — a screenshot is optional]
+
+I improved the game’s UI by adding clearer HIGHER and LOWER hints with emojis and different message styles. I also added a game summary and guess history to make the game easier to follow.These changes make the game more user-friendly and easier to understand.

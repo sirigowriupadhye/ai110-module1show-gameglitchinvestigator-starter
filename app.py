@@ -147,7 +147,12 @@ if submit:
         outcome, message = check_guess(guess_int, secret)
 
         if show_hint:
-            st.warning(message)
+            if outcome == "Too High":
+                st.warning("⬇️ Go LOWER! Your guess is too high.")
+            elif outcome == "Too Low":
+                st.info("⬆️ Go HIGHER! Your guess is too low.")
+            elif outcome == "Win":
+                st.success("🎉 Correct! You found the secret number!")
 
         st.session_state.score = update_score(
             current_score=st.session_state.score,
